@@ -63,3 +63,6 @@ Test run with modification : https://www.youtube.com/watch?v=mhGwcPWCbsA
 
 21/01/20 : V6 design files now released. Both fully built and partial built boards available from the EVBMW webshop : https://www.evbmw.com/index.php/evbmw-webshop
 Don't want to buy from me and support ongoing development? That's ok as this release also includes the BOM, CPL and Gerber files needed to build your own at JLCPCB : https://jlcpcb.com
+
+08/04/21 : V7 design files are now released. It has been updated with a smaller 5V regulator and delection of JTAG
+
