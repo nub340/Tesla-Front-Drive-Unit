@@ -29,7 +29,7 @@ There are at least three ways to go about it. Here is a quick summary of each ap
 
 2. **Made by JLCPCB, assembled by YOU (budget/challenge)** 
 
-    In this approach, you have empty PCBs made by JLCPCB, and assemble the board(s) yourself. You will need to purchase all of the components seperately using the "Bill of Materials" (BOM) file as your guide. You can actually upload the BOM file to [LSCS](https://www.lcsc.com/bom) to quickly order all of the parts. You will then need to solder on all of the components, most of them surface mount (SMT). This approach is a lot more work, but can reduce your costs even further. 
+    In this approach, you have empty PCBs made by JLCPCB, and assemble them yourself. You will need to purchase all of the components seperately using the "Bill of Materials" (BOM) file as your guide. You can actually upload the BOM file to [LSCS](https://www.lcsc.com/bom) to quickly order all of the parts. You will then need to solder on all of the components, most of them surface mount (SMT). This approach is a lot more work, but can reduce your costs even further. 
 
 3. **Made by YOU, assembled by YOU (extreme/not necessary)**
 
