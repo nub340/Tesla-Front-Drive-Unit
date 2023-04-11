@@ -35,16 +35,16 @@ There are at least three ways to go about it. Here is a quick summary of each ap
 
     You *could* make the actual PCB yourself if you have the right equipment and knowhow. With services today like JLCPCB, it probably doesn't make too much sense to do this. However, if you feel up to the task it could be prove to be the most cost-effective and I'd love to see someone make one that way!
 
-    ### To order fully assembled boards from JLCPCB.
+### To order fully assembled boards from JLCPCB.
 
-    1. Go to `jlcpcb.com` and click the "Instant Quote" button.
-    2. Add/upload PCB design file: `Gerber.zip`
-    3. Customize PCB options (optional)
-    4. Select "PCB Assembly" option  
-    5. Upload Bill of Materials file: `Tesla_FDU_V8_BOM_JLC.xls`
-    6. Upload Pick and Place file:  `Tesla_FDU_V8_CPL.csv`
-    7. Resolve any component stock issues (i.e. select replacments)
-    8. Finalize & order boards
+1. Go to `jlcpcb.com` and click the "Instant Quote" button.
+2. Add/upload PCB design file: `Gerber.zip`
+3. Customize PCB options (optional)
+4. Select "PCB Assembly" option  
+5. Upload Bill of Materials file: `Tesla_FDU_V8_BOM_JLC.xls`
+6. Upload Pick and Place file:  `Tesla_FDU_V8_CPL.csv`
+7. Resolve any component stock issues (i.e. select replacments)
+8. Finalize & order boards
 
 ### 3. Order PCB connectors and current sensors (per board)
 *NOTE: Sensors are optional if you're re-using the existing sensors*
