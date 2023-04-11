@@ -7,8 +7,9 @@ The following is a step-by-step guide for building a V8 logic board.
 - Visual Studio Code with Platform IO extension installed
 - ST-Link V2 USB adapter
 - ST-Link Utility software
-- USB to Serial TTL aAdapter
+- USB to Serial TTL adapter
 - Soldering iron and solder
+- Hot air gun (optional)
 - Some money
 
 ## Overview
@@ -22,15 +23,15 @@ The following is a step-by-step guide for building a V8 logic board.
 
 There are at least three ways to go about it. Here is a quick summary of each approach:
 
-1. Made and assembled by JLCPCB (recommended). 
+1. **Made and assembled by JLCPCB (recommended)**
 
     The most popular approach is to have the PCBs made and assembled by an online service like JLCPCB. The board ultimately gets delivered to your door with all of the components soldered on and ready to go. The only thing left to do is to flash the ESP32 and STM32 modules with the latest firmware, solder on all of the connectors (x5), and finally the current sensors (x2). Usually you must order at least five boards, but you can choose to only assemble one of them if you want to reduce cost.
 
-2. Made by JLCPCB, assembled by YOU (budget/challenge) 
+2. **Made by JLCPCB, assembled by YOU (budget/challenge)** 
 
     In this approach, you have empty PCBs made by JLCPCB, and assemble the board(s) yourself. You will need to purchase all of the components seperately using the "Bill of Materials" (BOM) file as your guide. You can actually upload the BOM file to [LSCS](https://www.lcsc.com/bom) to quickly order all of the parts. You will then need to solder on all of the components, most of them surface mount (SMT). This approach is a lot more work, but can reduce your costs even further. 
 
-3. Made by YOU, assembled by YOU (extreme/not necessary) 
+3. **Made by YOU, assembled by YOU (extreme/not necessary)**
 
     You *could* make the actual PCB yourself if you have the right equipment and knowhow. With services today like JLCPCB, it probably doesn't make too much sense to do this. However, if you feel up to the task it could be prove to be the most cost-effective and I'd love to see someone make one that way!
 
@@ -46,7 +47,7 @@ There are at least three ways to go about it. Here is a quick summary of each ap
     8. Finalize & order boards
 
 ### 3. Order PCB connectors and current sensors (per board)
-**Sensors are optional if you're re-using the existing sensors**
+*NOTE: Sensors are optional if you're re-using the existing sensors*
 - 2x Current Sensors: https://www.mouser.com/ProductDetail/Melexis/MLX91209LVA-CAA-002-SP?qs=f9yNj16SXrLPMXdIg%2FG8eQ%3D%3D
 - 2x 2-pin elbow connector: https://www.mouser.com/ProductDetail/306-S02BA-AIT2-1AK
 - 1x 6-pin elbow connector: https://www.mouser.com/ProductDetail/306-S06B-AIT2-1AK
@@ -114,14 +115,14 @@ There are at least three ways to go about it. Here is a quick summary of each ap
 
 Now comes the hard part. Once again, there are at least three main approaches:
 
-1. Re-use the existing sensors, leaving them in-place in the sensor rings (ideal/most challenging)
+1. Re-use the existing sensors, leaving them in-place in the sensor rings (ideal but most challenging)
     - Carefully scrape away the resin coating on the PCB and base of sensor legs, on both sides of the board as best as you can.
     - Desolder the sensors from the board, using solder wick, flux, etc
     - Lift the board off of the sensor legs, leaving the sensors embeded in-place in the sensor rings
     - Align the 8 tiny holes on the Open Inverter board with the 8 tiny sensor legs, and lower the board so that the legs go perfectly thru the holes in the board
     - Solder the sensor legs to the board
 
-2. Re-use the existing sensors, removing from and re-installing them from sensor rings (less challenging)
+2. Re-use the existing sensors, removing them from and re-installing them into the sensor rings (easier)
     - Use a hot air gun to blow hot air on the current sensors embedded in the sensor ring resin. 
     - Be careful not to get it too hot, but hot enough so that the sensors come out of goop in the rings while still being connected to the board
     - Carefully scrape away the resin coating on the PCB and base of sensor legs, on both sides of the board as best as you can.
@@ -130,7 +131,7 @@ Now comes the hard part. Once again, there are at least three main approaches:
     - Align the 8 tiny holes on the Open Inverter board with the 8 tiny sensor legs, and lower the board so that the legs go perfectly thru the holes in the board
     - Solder the sensor legs to the board
 
-3. Install new sensors (least challenging)
+3. Install new sensors (easiest)
     - Use a hot air gun to blow hot air on the current sensors embedded in the sensor ring resin. 
     - Be careful not to get it too hot, but hot enough so that the sensors come out of goop in the rings while still being connected to the board
     - Place the new sensors in the sensor ring holes left behind Be sure to orient the sensors correctly. The 45 degree angle should be facing away from the board. 
