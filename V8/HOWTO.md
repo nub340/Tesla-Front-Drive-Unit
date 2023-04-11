@@ -1,5 +1,5 @@
 # How To Build a V8 Board From Scratch
-This is a step-by-step guide for building a V8 logic board, which now features an ESP32 Wifi module instead of a ESP8266 Wifi module. 
+The following is a step-by-step guide for building a V8 logic board. 
 
 ## Prerequesites
 - A basic understanding and ability to work with Arduino-like microcontrollers
