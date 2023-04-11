@@ -12,16 +12,14 @@ The following is a step-by-step guide for building a V8 logic board.
 - Hot air gun (optional)
 - Some money
 
-## Overview
-
-### 1. Download the design files from [this](/) repository:
+## 1. Download the design files from [this](/) repository:
 1. [Gerber.zip](gerber.zip) (PCB Design) - You may need to explore the repo history if you don't see it.
 2. [Tesla_FDU_V8_BOM_JLC.xls](Tesla_FDU_V8_BOM_JLC.xls) (Bill of Materials)
 3. [Tesla_FDU_V8_CPL.csv](Tesla_FDU_V8_CPL.csv) (Pick and Place)
 
-### 2. Make or have a PCB made
+## 2. Make or have a PCB made
 
-There are at least three ways to go about it. Here is a quick summary of each approach:
+There are at least three approaches, here is a quick summary of each:
 
 1. **Made and assembled by JLCPCB (recommended)**
 
@@ -46,7 +44,7 @@ There are at least three ways to go about it. Here is a quick summary of each ap
 7. Resolve any component stock issues (i.e. select replacments)
 8. Finalize & order boards
 
-### 3. Order PCB connectors and current sensors (per board)
+## 3. Order PCB connectors and current sensors (per board)
 *NOTE: Sensors are optional if you're re-using the existing sensors*
 - 2x Current Sensors: https://www.mouser.com/ProductDetail/Melexis/MLX91209LVA-CAA-002-SP?qs=f9yNj16SXrLPMXdIg%2FG8eQ%3D%3D
 - 2x 2-pin elbow connector: https://www.mouser.com/ProductDetail/306-S02BA-AIT2-1AK
@@ -56,7 +54,7 @@ There are at least three ways to go about it. Here is a quick summary of each ap
 - 1x 20-pin Molex harness connector: https://www.mouser.com/ProductDetail/538-33472-2002
 - 20x Molex pins: https://www.mouser.com/ProductDetail/538-33012-2002-LP 
 
-### 4. Program ESP32 Wifi Module
+## 4. Program ESP32 Wifi Module
 - Ensure the Platform IO Core CLI and VSCode Extension are installed
 - Clone [esp32-web-interface](https://github.com/Pete9008/esp32-web-interface/tree/johu) repo, and open in VSCode
 - Switch to `johu` branch!
@@ -75,7 +73,7 @@ There are at least three ways to go about it. Here is a quick summary of each ap
 - If this fails, double-check that you don't have any other process connected to the ESP32
 - You should see a Wifi network named ESP_XXXXXX. You should now be able to connect to it and see the web interface.
 
-### 5. Program STM32 Module
+## 5. Program STM32 Module
 - Download STM32 assets from the [stm32-sine](https://github.com/jsphuebner/stm32-sine/releases) repository
     - stm32-bootloader.hex
     - stm32-sine.hex
@@ -88,20 +86,20 @@ There are at least three ways to go about it. Here is a quick summary of each ap
 - Repeat last two steps with `stm32-loader.hex` file
 - Red LED on board should start blinking
 
-### 6. Verify Programming
+## 6. Verify Programming
 - Connect to the ESP_XXXXXX wifi network
 - Browse to `192.168.4.1`
 - Verify the web interface is visible and funtioning
 - Verify you can see abd modify parameters
 - Verify you can save chnges to flash
 
-### 7. Solder on all the board connectors
+## 7. Solder on all the board connectors
 - Solder 18-pin IGBT connector to **UNDERSIDE** of board
 - Solder 20-pin main wiring harness connector to **UNDERSIDE** of board
 - Solder both 2-pin thermistor connectors
 - Solder single 6-pin thermistor connector
 
-### 8. Remove stock Tesla logic board & current sensors from Inverter
+## 8. Remove stock Tesla logic board & current sensors from Inverter
 - Remove the inverter from the Tesla SDU 
 - Unscrew the two green T20 Torx screws from the orange plastic phase wire guide
 - Remove the orange plastic phase wire guide from the three orange phase wires. Carefully work it **down**, towards the inverter body until you can get it off without breaking it.
@@ -111,7 +109,7 @@ There are at least three ways to go about it. Here is a quick summary of each ap
 - Pop the board free from the 18-pin IGBT connector underneath using a plastic trim tool
 - Carefully remove the logic board tray up and away from the inverter.
 
-### 9. Current Sensors
+## 9. Current Sensors
 
 Now comes the hard part. Once again, there are at least three main approaches:
 
