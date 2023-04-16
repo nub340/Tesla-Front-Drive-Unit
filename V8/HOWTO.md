@@ -153,11 +153,11 @@ Reinstall the large brown plastic Molex connector and blue retaining clip onto t
 
 - Solder the sensor legs to the board.
 
-- Double-check all connectors and make sure everything looks aligned correctly, with no bent pins, etc. When satisfied, re-install the board back into the inverter.
+- Re-install the yellow T15 Torx screws to secure the board to the metal tray.
 
-- Re-install the yellow T15 and most of the green T20 Torx screws.
+- Double-check all connectors and make sure everything looks aligned correctly, with no bent pins, etc. When satisfied, re-install the tray and board back into the inverter.
 
-- Re-install the big orange plastic phase wire holder and final two green T20 Torx screws.
+- Re-install the big orange plastic phase wire holder and finally the green T20 Torx screws.
 
 ## Congratulations!
 
