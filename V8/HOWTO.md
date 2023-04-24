@@ -32,6 +32,7 @@ Alternatively, you can order empty PCBs from JLCPCB and manually solder all comp
 3. Customize PCB options (optional)
 4. Select "PCB Assembly" option
 5. Upload Bill of Materials file: `Tesla_FDU_V8_BOM_JLC.xls`
+    - NOTE: You may need to rename the "Package" column to "Footprint" for it to upload correctly.
 6. Upload Pick and Place file: `Tesla_FDU_V8_CPL.csv`
 7. Resolve any component stock issues (i.e., select replacements)
 8. Finalize & order boards
@@ -162,4 +163,3 @@ Reinstall the large brown plastic Molex connector and blue retaining clip onto t
 ## Congratulations!
 
 Your inverter has been unlocked and can be re-installed back into the motor!!
-
