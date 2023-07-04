@@ -56,6 +56,9 @@ _NOTE: Quantity is per board. Sensors are optional if you're re-using the existi
 - **Make sure the STM32 module is erased or held in reset mode!**
 - Ensure the logic board is powered off
 - Connect the USB Serial Adapter to the 6-pin ESP32 header: **Tx->Tx**, **Rx->Rx**, **GND->GND**.
+- Run the following terminal command to determine what port the ESP32 is showing up on: `pio device list`
+- Create a copy of the `platformio-local-override.ini.example` file in the root of the project and rename it to `platformio-local-override.ini`. 
+- Modify the `platformio-local-override.ini` file to use the correct port from the step above.
 - Ensure `PROG` and `GND` on the 6-pin header are bridged to boot into programming mode upon powering up.
 - In **VSCode** > **Platform IO Tab** > **Project Tasks** > **Release** > **General**, click the `Monitor` task and wait for the monitor terminal to open and connect
 - Now power on the board with +12V power at the main 20-pin connector (pins: 13 & 19)
